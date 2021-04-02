@@ -8,5 +8,5 @@ First you need to download the list of haveibeenpwned pwned passwords from here 
 
 Then run:
 
-    pip install -t requirements.txt
+    pip install -r requirements.txt
     python check.py <path-to-pwned-passwords.txt> <path-to-db.pwsafe3>

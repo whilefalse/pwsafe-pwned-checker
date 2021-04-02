@@ -1,10 +1,12 @@
-# pwsafe2lastpass
+# pwsafe-pwned-checker
 
-A simple tool to export passwords from a pwSafe3 database into a CSV format compatible with LastPass import.
+A tool to check the haveibeenpwned list of pwned passwords against a pwsafe3 password safe.
 
 ## Usage
 
-    pip install -t requirements.txt
-    python dump.py <path-to-db.pwsafe3> | pbcopy
+First you need to download the list of haveibeenpwned pwned passwords from here https://haveibeenpwned.com/Passwords, and unzip it (the SHA1 version).
 
-Then go to LastPass import, choose *Generic CSV* and paste from the clipboard.
+Then run:
+
+    pip install -t requirements.txt
+    python check.py <path-to-pwned-passwords.txt> <path-to-db.pwsafe3>
